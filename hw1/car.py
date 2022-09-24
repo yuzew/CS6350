@@ -13,10 +13,10 @@ import pandas as pd
 columns = ['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'label']
 types = {'buying': str, 'maint': str, 'doors': str, 'persons': str, 'lug_boot': str, 'safety': str, 'label': str}
 # load train data
-train_data =  pd.read_csv('E:/cs6350/hw1/car/train.csv', names=columns, dtype=types)
+train_data =  pd.read_csv('../hw1/car/train.csv', names=columns, dtype=types)
 train_size = len(train_data.index)
 # load test data
-test_data =  pd.read_csv('E:/cs6350/hw1/car/test.csv', names=columns, dtype=types)
+test_data =  pd.read_csv('../hw1/car/test.csv', names=columns, dtype=types)
 test_size = len(test_data.index)
 # set features and label 
 features = {'buying': ['vhigh', 'high', 'med', 'low'], 
